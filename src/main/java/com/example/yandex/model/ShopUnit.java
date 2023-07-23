@@ -26,7 +26,7 @@ public class ShopUnit {
     @Nullable
     private Long price;
     @Nullable
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     private List<ShopUnit> children;
 
 }
